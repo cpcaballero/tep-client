@@ -61,7 +61,7 @@ const Landing = (props) => {
             <Modal show={props.signUpModal} onHide={props.handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Sign Up!</Modal.Title>
-                </Modal.Header>
+                </Modal.Header> 
                 <Modal.Body>
                     <p>Woohoo, you're reading this text in a modal!</p>
                     <Form.Control className="my-4" placeholder="Where is the party at?" />
