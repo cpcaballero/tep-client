@@ -7,18 +7,27 @@ import { Row, Image, Button, Col, Container, Card, CardDeck, Carousel, Form, Mod
 import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 import SampleImage from '../assets/icons/sample.PNG';
-import SampleIcon from '../assets/icons/catering.png';
+import VenueIcon from '../assets/icons/location.png';
+import CateringIcon from '../assets/icons/catering.png';
+import EntertainmentIcon from '../assets/icons/entertainment.png';
+import MediaIcon from '../assets/icons/media_coverage.png';
+import EventDetailingIcon from '../assets/icons/event_detailing.png';
+import GiveawayIcon from '../assets/icons/giveaway.png';
+
+import VenueImage from '../assets/icons/venues.jpg';
+import CateringImage from '../assets/icons/catering.jpg';
+import EntertainmentImage from '../assets/icons/entertainment.jpg';
+import MediaImage from '../assets/icons/meda-coverage.jpg';
+import EventDetailingImage from '../assets/icons/event-detailing.jpg';
+import GiveawayImage from '../assets/icons/giveaways.jpg';
+
+
 
 const Landing = (props) => {
 
     const [startDate, setStartDate] = useState(null);
     const [endDate, setEndtDate] = useState(null);
     const [focusedInput, setFocusedInput] = useState(null);
-
-
-    
-
-
     return (
         <>
             <div className="fill-height">
@@ -70,290 +79,125 @@ const Landing = (props) => {
                     </Col>
                 </div>
             </div>
-            <Container style={{marginTop: "20px"}}>
-<div>
-  <InputGroup style={{marginTop: "2px"}}>
-    <FormControl
-      placeholder="Recipient's username"
-      aria-label="Recipient's username"
-      aria-describedby="basic-addon2"
-    />
-    <InputGroup.Append>
-      <Button variant="outline-secondary">Search</Button>
-      <DropdownButton
-      as={InputGroup.Prepend}
-      variant="outline-secondary"
-      title="Dropdown"
-      id="input-group-dropdown-1"
-    >
-      <Dropdown.Item href="#">Action</Dropdown.Item>
-      <Dropdown.Item href="#">Another action</Dropdown.Item>
-      <Dropdown.Item href="#">Something else here</Dropdown.Item>
-      <Dropdown.Divider />
-      <Dropdown.Item href="#">Separated link</Dropdown.Item>
-    </DropdownButton>
-    </InputGroup.Append>
-  </InputGroup>
-</div>
-<CardDeck>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card> <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardDeck>
+            <Container fluid style={{marginTop: "60px"}}>
+                <div className="mx-1 w-100">
+                    <InputGroup className="w-75" style={{marginTop: "20px"}}>
+                        <FormControl
+                            placeholder="What can we help you find?"
+                            aria-label="What can we help you find?"
+                            aria-describedby="basic-addon2"
+                            className="rounded-0"
+                        />
+                        <InputGroup.Append>
+                            <Button variant="outline-secondary">Search</Button>
+                            <DropdownButton
+                                as={InputGroup.Prepend}
+                                variant="outline-secondary"
+                                title="Filters"
+                                id="input-group-dropdown-1"
+                            >
+                                <Dropdown.Item href="#">Latest</Dropdown.Item>
+                                <Dropdown.Item href="#">Most Viewed</Dropdown.Item>
+                                <Dropdown.Item href="#">Rating</Dropdown.Item>
+                            </DropdownButton>
+                        </InputGroup.Append>
+                    </InputGroup>
+                </div>
+                <CardDeck className="mx-1">
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img fluid variant="top" src={SampleImage} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={VenueIcon} width="50" height="auto" /><br />Venues
+                                    </span>
+                                </Card.Title>
+                                <Card.Text>
+                                    Church, Restaurant, Garden, Hall, etc.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img fluid variant="top" src={CateringImage} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={CateringIcon} width="50" height="auto" /><br />Catering
+                                    </span>
+                                </Card.Title>
+                                <Card.Text>
+                                    Japanese, Mediterranean, Vegetarian, Halal, etc.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img fluid variant="top" src={EntertainmentImage} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={EntertainmentIcon} width="50" height="auto" /><br />Entertainment
+                                    </span>
+                                </Card.Title>
+                                <Card.Text>
+                                    Singer, DJ, Band, Hosting, Talents, etc.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img variant="top" src={MediaImage} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={MediaIcon} width="50" height="auto" /><br />Media Coverage
+                                    </span>
+                                </Card.Title>
+                                <Card.Text>
+                                    Videographer, Photographer, Live Streaming, etc.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img variant="top" src={EventDetailingImage} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={EventDetailingIcon} width="50" height="auto" /><br />Event Detailing
+                                    </span>
+                                </Card.Title>
+                                <Card.Text>
+                                    Coordinator, Lights and Sounds, Tailoring, Florist, Decor, etc.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img variant="top" src={GiveawayImage} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={GiveawayIcon} width="50" height="auto" /><br />Giveaways
+                                    </span>
+                                </Card.Title>
+                                <Card.Text>
+                                    Invitation, Souvenirs, Photo Booth, etc.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    
+                </CardDeck>
 
 
-<CardDeck>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card> <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardDeck>
-
-
-<CardDeck>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card> <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{marginTop: "20px"}}> 
-    <Card.Img variant="top" src={SampleImage} />
-    <Card.Body>
-      <Card.Title>
-      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardDeck>
 
 </Container>
             <Modal show={props.signUpModal} onHide={props.handleClose}>
