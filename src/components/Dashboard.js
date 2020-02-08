@@ -5,6 +5,12 @@ import '@y0c/react-datepicker/assets/styles/calendar.scss';
 import { Row, Image, Button, Col, Container, Card, CardDeck, Carousel, Form, Modal } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import PieChart from 'react-minimal-pie-chart';
+import DonutChart from 'react-donut-chart';
+import ListGroup from 'react-bootstrap/ListGroup'
+import Table from 'react-bootstrap/Table'
+import Donut from 'react-svg-donuts';
+import BarChart from "react-svg-bar-chart"
+
 
 const Landing = (props) => {
 
@@ -12,14 +18,19 @@ const Landing = (props) => {
 
     const onChange = newDate => setNewDate(newDate);
 
-    
+    const dataPie = [
+    {value: 100, stroke: "#22594e", strokeWidth: 6},
+    {value: 60, stroke: "#2f7d6d"},
+    {value: 30, stroke: "#3da18d"},
+    {value: 20, stroke: "#69c2b0"},
+    {value: 10, stroke: "#a1d9ce"},
+  ]
 
 
     return (
         <>
             <div className="fill-height">
-                <div className="headerImage">
-                    <Col xs={12} sm={8} md={6} lg={4} className="mx-xs-1 mx-md-5" style={{marginTop:"50px"}}>
+                    {/* <Col xs={12} sm={8} md={6} lg={4} className="mx-xs-1 mx-md-5" style={{marginTop:"50px"}}>
                         <Card>
                             <Card.Body>
                                 <Card.Title>Book your event needs in one place</Card.Title>
@@ -49,17 +60,121 @@ const Landing = (props) => {
                                 <Button variant="primary">Go somewhere</Button>
                             </Card.Body>
                         </Card>
-                    </Col>
-                </div>
+                    </Col> */}
                 
-                <PieChart
+                {/* <PieChart
                 data={[
                     { title: 'One', value: 10, color: '#E38627' },
                     { title: 'Two', value: 15, color: '#C13C37' },
                     { title: 'Three', value: 20, color: '#6A2135' },
                 ]}
-                />;
+                />; */}
 
+<Donut></Donut> 
+
+<BarChart></BarChart>
+
+<ListGroup horizontal className="mb-2" cborderColor="white" style={{marginTop: "80px"}}>
+<ListGroup.Item> 
+  <Card bg="primary" text="white" style={{ width: '20rem' }}>
+    <Card.Body>
+      <Card.Text>
+       <font size="6"> <b>0</b> </font> <br/>
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer style={{ width: '18rem', color: 'white' }}><font size="4"><b>Events this week</b></font></Card.Footer>
+  </Card>
+  <br />
+  </ListGroup.Item>
+  <ListGroup.Item>
+  <Card bg="secondary" text="white" style={{ width: '18rem' }}>
+  <Card.Body>
+      <Card.Text>
+       <font size="6"> <b>12</b> </font> <br/>
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer style={{ width: '18rem', color: 'white' }}><font size="4"><b>Pending Bookings</b></font></Card.Footer>
+  </Card>
+  <br />
+  </ListGroup.Item>
+  <ListGroup.Item>
+  <Card bg="success" text="white" style={{ width: '18rem' }}>
+  <Card.Body>
+      <Card.Text>
+       <font size="6"> <b>4.8</b> </font> <br/>
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer style={{ width: '18rem', color: 'white' }}><font size="4"><b>Customer Ratings</b></font></Card.Footer>
+  </Card>
+  <br />
+  </ListGroup.Item>
+  <ListGroup.Item>
+  <Card bg="danger" text="white" style={{ width: '18rem' }}>
+  <Card.Body>
+      <Card.Text>
+       <font size="6"> <b>14</b> </font> <br/>
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer style={{ width: '18rem', color: 'white' }}><font size="4"><b>Services marked as favorite</b></font></Card.Footer>
+  </Card>
+  <br />
+  </ListGroup.Item>
+  <ListGroup.Item>
+  <Card bg="warning" text="white" style={{ width: '20rem' }}>
+  <Card.Body>
+      <Card.Text>
+       <font size="6"> <b>Php 82,278.00</b> </font> <br/>
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer style={{ width: '18rem', color: 'white' }}><font size="4"><b>Earned with TEP</b></font></Card.Footer>
+  </Card>
+  <br />
+  </ListGroup.Item>
+  </ListGroup>
+
+
+  <Table responsive>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+  </tbody>
+</Table>
 
                 {/* <div className="text">
                     <span className="title">Coding Classes for All</span>
