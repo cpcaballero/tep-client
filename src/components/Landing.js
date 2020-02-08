@@ -3,9 +3,11 @@ import DateTimePicker from 'react-datetime-picker';
 import { DatePicker } from '@y0c/react-datepicker';
 import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
 import '@y0c/react-datepicker/assets/styles/calendar.scss';
-import { Row, Image, Button, Col, Container, Card, CardDeck, Carousel, Form, Modal } from 'react-bootstrap'
+import { Row, Image, Button, Col, Container, Card, CardDeck, Carousel, Form, Modal, Dropdown, InputGroup, FormControl, DropdownButton } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
+import SampleImage from '../assets/icons/sample.PNG';
+import SampleIcon from '../assets/icons/catering.png';
 
 const Landing = (props) => {
 
@@ -68,6 +70,292 @@ const Landing = (props) => {
                     </Col>
                 </div>
             </div>
+            <Container style={{marginTop: "20px"}}>
+<div>
+  <InputGroup style={{marginTop: "2px"}}>
+    <FormControl
+      placeholder="Recipient's username"
+      aria-label="Recipient's username"
+      aria-describedby="basic-addon2"
+    />
+    <InputGroup.Append>
+      <Button variant="outline-secondary">Search</Button>
+      <DropdownButton
+      as={InputGroup.Prepend}
+      variant="outline-secondary"
+      title="Dropdown"
+      id="input-group-dropdown-1"
+    >
+      <Dropdown.Item href="#">Action</Dropdown.Item>
+      <Dropdown.Item href="#">Another action</Dropdown.Item>
+      <Dropdown.Item href="#">Something else here</Dropdown.Item>
+      <Dropdown.Divider />
+      <Dropdown.Item href="#">Separated link</Dropdown.Item>
+    </DropdownButton>
+    </InputGroup.Append>
+  </InputGroup>
+</div>
+<CardDeck>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card> <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+</CardDeck>
+
+
+<CardDeck>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card> <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+</CardDeck>
+
+
+<CardDeck>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card> <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card style={{marginTop: "20px"}}> 
+    <Card.Img variant="top" src={SampleImage} />
+    <Card.Body>
+      <Card.Title>
+      <Image variant="top" src={SampleIcon} width="50" height="auto" /> Cattering</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+</CardDeck>
+
+</Container>
             <Modal show={props.signUpModal} onHide={props.handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Sign Up!</Modal.Title>
