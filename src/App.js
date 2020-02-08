@@ -15,6 +15,10 @@ import FormControl from 'react-bootstrap/FormControl';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Container from 'react-bootstrap/Container';
+import AccountType from './components/AccountType';
+import MerchantProfile from './components/MerchantProfile';
+import MerchantDocument from './components/MerchantDocument';
+
 const App = () => {
 
     const [signUpModal, showSignUpModal] = useState(false);
@@ -45,6 +49,18 @@ const App = () => {
 
                     <Route exact path="/dashboard" render={
                         (props) => <Dashboard />
+                    
+                    } />
+                    <Route exact path="/accountType" render={
+                        (props) => <AccountType />
+                    
+                    } />
+                    <Route exact path="/merchantProfile" render={
+                        (props) => <MerchantProfile />
+                    
+                    } />
+                    <Route exact path="/merchantDocument" render={
+                        (props) => <MerchantDocument />
                     
                     } />
                 </div>
