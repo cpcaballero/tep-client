@@ -108,3 +108,7 @@
 }
 
 /* LandingPage Hero Container/Jumbotron/Header Image specific styles END------------------------ */
+
+.DateInput{
+  width: 200px !important;
+}
