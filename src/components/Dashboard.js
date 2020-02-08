@@ -33,11 +33,11 @@ const progress = 50;
 const renderProgress = progress => <strong>{progress}%</strong>;
 
 
-  const data = []
- 
-  for (let x = 1; x <= 30; x++) {
-      data.push({x: x, y: Math.floor(Math.random() * 100)})
-  }
+const data = []
+  
+for (let x = 1; x <= 30; x++) {
+    data.push({x: x, y: Math.floor(Math.random() * 100)})
+}
     return (
         <>
             <div className="fill-height">

@@ -1,5 +1,6 @@
 import React, {useState, Component} from 'react'
 import DateTimePicker from 'react-datetime-picker';
+import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
 import { DatePicker } from '@y0c/react-datepicker';
 import '@y0c/react-datepicker/assets/styles/calendar.scss';
 import { Row, Image, Button, Col, Container, Card, CardDeck, Carousel, Form, Modal } from 'react-bootstrap'
@@ -31,7 +32,6 @@ const Landing = (props) => {
                                     <Form.Control className="my-4" placeholder="Where is the party at?" />
                                     <Row>
                                         <Col>
-<<<<<<< HEAD
                                             <DateRangePicker
                                                 startDate={startDate} // momentPropTypes.momentObj or null,
                                                 startDateId="your_unique_start_date_id" // PropTypes.string.isRequired,
@@ -63,22 +63,6 @@ const Landing = (props) => {
                                     </Form.Control>
                                     {/* <DatePicker onChange={onChange}/> */}
                                     <Button className="headerActionButton rounded-0 btn-block" variant="info"> Let's get the planning started! </Button>
-=======
-                                            <DateTimePicker
-                                                onChange={onChange}
-                                                value={newDate}
-                                            />
-                                        </Col>
-                                        <Col>
-                                            <DateTimePicker
-                                                onChange={onChange}
-                                                value={newDate}
-                                            />
-                                        </Col>
-                                    </Row>
-                                    <DatePicker onChange={onChange}/>
-                                <Button variant="primary">Go somewhere</Button>
->>>>>>> b3912b18d39af321a290cbab50b2a3896035153b
                             </Card.Body>
                         </Card>
                     </Col>
