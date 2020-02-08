@@ -1,7 +1,6 @@
 import React, {useState, Component} from 'react'
-import DateTimePicker from 'react-datetime-picker';
+import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
 import { DatePicker } from '@y0c/react-datepicker';
-import '@y0c/react-datepicker/assets/styles/calendar.scss';
 import { Row, Image, Button, Col, Container, Card, CardDeck, Carousel, Form, Modal } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 const Landing = (props) => {
@@ -31,19 +30,18 @@ const Landing = (props) => {
                                     </Form.Row>
                                     <Row>
                                         <Col>
+                                            <DateRangePicker
+                                                
+                                            />
+                                        </Col>
+                                        {/* <Col>
                                             <DateTimePicker
                                                 onChange={onChange}
                                                 value={newDate}
                                             />
-                                        </Col>
-                                        <Col>
-                                            <DateTimePicker
-                                                onChange={onChange}
-                                                value={newDate}
-                                            />
-                                        </Col>
+                                        </Col> */}
                                     </Row>
-                                    <DatePicker onChange={onChange}/>
+                                    {/* <DatePicker onChange={onChange}/> */}
                                 <Button variant="primary">Go somewhere</Button>
                             </Card.Body>
                         </Card>
