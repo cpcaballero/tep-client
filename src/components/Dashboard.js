@@ -24,9 +24,20 @@ const Landing = (props) => {
     {value: 30, stroke: "#3da18d"},
     {value: 20, stroke: "#69c2b0"},
     {value: 10, stroke: "#a1d9ce"},
-  ]
+  ];
+
+  // The donut will be half filled
+const progress = 50;
+ 
+// The value will be wrapped inside a <strong> tag.
+const renderProgress = progress => <strong>{progress}%</strong>;
 
 
+  const data = []
+ 
+  for (let x = 1; x <= 30; x++) {
+      data.push({x: x, y: Math.floor(Math.random() * 100)})
+  }
     return (
         <>
             <div className="fill-height">
@@ -70,9 +81,7 @@ const Landing = (props) => {
                 ]}
                 />; */}
 
-<Donut></Donut> 
 
-<BarChart></BarChart>
 
 <ListGroup horizontal className="mb-2" cborderColor="white" style={{marginTop: "80px"}}>
 <ListGroup.Item> 
@@ -132,8 +141,56 @@ const Landing = (props) => {
   </ListGroup.Item>
   </ListGroup>
 
+  <Donut progress={progress} onRender={renderProgress} />
 
-  <Table responsive>
+<BarChart data={data}  />
+
+  <Table >
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+  </tbody>
+</Table>
+
+
+
+  <Table >
   <thead>
     <tr>
       <th>#</th>
