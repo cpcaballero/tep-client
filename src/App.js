@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/layout/Navbar';
 import Landing from './components/Landing';
+import Dashboard from './components/Dashboard';
 
 const App = () => {
 
@@ -27,6 +28,10 @@ const App = () => {
                             signUpModal={signUpModal} 
                             handleClose={handleClose}
                             handleShow={handleShow} /> 
+                    } />
+                    <Route exact path="/dashboard" render={
+                        (props) => <Dashboard />
+                    
                     } />
                 </div>
         </Router>
