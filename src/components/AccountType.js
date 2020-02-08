@@ -4,20 +4,12 @@ import { DatePicker } from '@y0c/react-datepicker';
 import '@y0c/react-datepicker/assets/styles/calendar.scss';
 import { Row, Image, Button, Col, Container, Card, CardDeck, Carousel, Form, Modal } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-import Chart from 'react-apexcharts'
+import PieChart from 'react-minimal-pie-chart';
+import DonutChart from 'react-donut-chart';
 import ListGroup from 'react-bootstrap/ListGroup'
 import Table from 'react-bootstrap/Table'
 import Donut from 'react-svg-donuts';
 import BarChart from "react-svg-bar-chart"
-
-
-import SampleImage from '../assets/icons/sample.PNG';
-import SampleIcon from '../assets/icons/catering.png';
-import InputGroup from 'react-bootstrap/InputGroup';
-
-import FormControl from 'react-bootstrap/FormControl';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown';
 
 
 const Landing = (props) => {
@@ -34,26 +26,6 @@ const Landing = (props) => {
     {value: 10, stroke: "#a1d9ce"},
   ];
 
-  const donutChart = {
-    series: [44, 55, 41, 17, 15],
-            options: {
-              chart: {
-                type: 'donut',
-              },
-              responsive: [{
-                breakpoint: 480,
-                options: {
-                  chart: {
-                    width: 200
-                  },
-                  legend: {
-                    position: 'bottom'
-                  }
-                }
-              }]
-            },
-  };
-
   // The donut will be half filled
 const progress = 50;
  
@@ -61,11 +33,11 @@ const progress = 50;
 const renderProgress = progress => <strong>{progress}%</strong>;
 
 
-const data = []
-
-for (let x = 1; x <= 30; x++) {
-    data.push({x: x, y: Math.floor(Math.random() * 100)})
-}
+  const data = []
+ 
+  for (let x = 1; x <= 30; x++) {
+      data.push({x: x, y: Math.floor(Math.random() * 100)})
+  }
     return (
         <>
             <div className="fill-height">
@@ -169,11 +141,7 @@ for (let x = 1; x <= 30; x++) {
   </ListGroup.Item>
   </ListGroup>
 
-  <div className="donut mb-5 pb-5">
-    <Chart options={donutChart.options} series={donutChart.series} type="donut" width="380" />
-  </div>
-
-  {/* <Donut progress={progress} onRender={renderProgress} /> */}
+  <Donut progress={progress} onRender={renderProgress} />
 
 <BarChart data={data}  />
 
