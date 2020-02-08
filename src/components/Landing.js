@@ -4,11 +4,14 @@ import { DatePicker } from '@y0c/react-datepicker';
 import '@y0c/react-datepicker/assets/styles/calendar.scss';
 import { Row, Image, Button, Col, Container, Card, CardDeck, Carousel, Form, Modal } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
+import Moment from 'react-moment';
+
 const Landing = (props) => {
 
-    const [newDate, setNewDate] = useState(new Date())
+    const [startDate, setStartDate] = useState(null);
+    const [endDate, setEndtDate] = useState(null);
+    const [focusedInput, setFocusedInput] = useState(null);
 
-    const onChange = newDate => setNewDate(newDate);
 
     
 
@@ -26,11 +29,41 @@ const Landing = (props) => {
                                         <option>...</option>
                                     </Form.Control>
                                     <Form.Control className="my-4" placeholder="Where is the party at?" />
-                                    <Form.Row>
-                                        <Form.Control as="date" placeholder="When will it be?" />
-                                    </Form.Row>
                                     <Row>
                                         <Col>
+<<<<<<< HEAD
+                                            <DateRangePicker
+                                                startDate={startDate} // momentPropTypes.momentObj or null,
+                                                startDateId="your_unique_start_date_id" // PropTypes.string.isRequired,
+                                                endDate={endDate} // momentPropTypes.momentObj or null,
+                                                endDateId="your_unique_end_date_id" // PropTypes.string.isRequired,
+                                                onDatesChange={({ startDate, endDate }) => { setStartDate(startDate); setEndtDate(endDate); } }// PropTypes.func.isRequired,
+                                                focusedInput={focusedInput} // PropTypes.oneOf([START_DATE, END_DATE]) or null,
+                                                onFocusChange={setFocusedInput} // PropTypes.func.isRequired,
+                                                startDatePlaceholderText="When will it be?"
+                                                endDatePlaceholderText="Until when?"
+                                                block={true}
+                                                withPortal={false}
+                                                required={true}
+                                            />
+                                        </Col>
+                                    </Row>
+                                    <Form.Control as="select" className="my-4">
+                                        <option>How many people are we expecting?</option>
+                                        <option>Less than 10 people</option>
+                                        <option>10 - 20 people</option>
+                                        <option>20 - 50 people</option>
+                                        <option>50 - 100 people</option>
+                                        <option>100 - 150 people</option>
+                                        <option>150 - 200 people</option>
+                                        <option>200 - 250 people</option>
+                                        <option>250 - 300 people</option>
+                                        <option>300 - 350 people</option>
+                                        <option>More than 350 people</option>
+                                    </Form.Control>
+                                    {/* <DatePicker onChange={onChange}/> */}
+                                    <Button className="headerActionButton rounded-0 btn-block" variant="info"> Let's get the planning started! </Button>
+=======
                                             <DateTimePicker
                                                 onChange={onChange}
                                                 value={newDate}
@@ -45,18 +78,11 @@ const Landing = (props) => {
                                     </Row>
                                     <DatePicker onChange={onChange}/>
                                 <Button variant="primary">Go somewhere</Button>
+>>>>>>> b3912b18d39af321a290cbab50b2a3896035153b
                             </Card.Body>
                         </Card>
                     </Col>
                 </div>
-                
-
-
-                {/* <div className="text">
-                    <span className="title">Coding Classes for All</span>
-                    <span className="subtitle">KIDS TO PROFESSIONALS</span>
-                    <Button className="headerActionButton" variant="light" size="lg"> Learn More </Button>
-                </div> */}
             </div>
             <Modal show={props.signUpModal} onHide={props.handleClose}>
                 <Modal.Header closeButton>
