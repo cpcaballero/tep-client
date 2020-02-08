@@ -42,15 +42,15 @@ const App = () => {
 <Container style={{marginTop: "20px"}}>
 
 <div>
-<InputGroup style={{marginTop: "2px"}}>
+    <InputGroup style={{marginTop: "2px"}}>
     <FormControl
-      placeholder="Recipient's username"
-      aria-label="Recipient's username"
-      aria-describedby="basic-addon2"
+        placeholder="Recipient's username"
+        aria-label="Recipient's username"
+        aria-describedby="basic-addon2"
     />
     <InputGroup.Append>
-      <Button variant="outline-secondary">Search</Button>
-      <DropdownButton
+    <Button variant="outline-secondary">Search</Button>
+    <DropdownButton
       as={InputGroup.Prepend}
       variant="outline-secondary"
       title="Dropdown"
