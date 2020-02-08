@@ -4,8 +4,7 @@ import { DatePicker } from '@y0c/react-datepicker';
 import '@y0c/react-datepicker/assets/styles/calendar.scss';
 import { Row, Image, Button, Col, Container, Card, CardDeck, Carousel, Form, Modal } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-import PieChart from 'react-minimal-pie-chart';
-import DonutChart from 'react-donut-chart';
+import Chart from 'react-apexcharts'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Table from 'react-bootstrap/Table'
 import Donut from 'react-svg-donuts';
@@ -26,6 +25,26 @@ const Landing = (props) => {
     {value: 10, stroke: "#a1d9ce"},
   ];
 
+  const donutChart = {
+    series: [44, 55, 41, 17, 15],
+            options: {
+              chart: {
+                type: 'donut',
+              },
+              responsive: [{
+                breakpoint: 480,
+                options: {
+                  chart: {
+                    width: 200
+                  },
+                  legend: {
+                    position: 'bottom'
+                  }
+                }
+              }]
+            },
+  };
+
   // The donut will be half filled
 const progress = 50;
  
@@ -34,7 +53,7 @@ const renderProgress = progress => <strong>{progress}%</strong>;
 
 
 const data = []
-  
+
 for (let x = 1; x <= 30; x++) {
     data.push({x: x, y: Math.floor(Math.random() * 100)})
 }
@@ -141,7 +160,11 @@ for (let x = 1; x <= 30; x++) {
   </ListGroup.Item>
   </ListGroup>
 
-  <Donut progress={progress} onRender={renderProgress} />
+  <div className="donut mb-5 pb-5">
+    <Chart options={donutChart.options} series={donutChart.series} type="donut" width="380" />
+  </div>
+
+  {/* <Donut progress={progress} onRender={renderProgress} /> */}
 
 <BarChart data={data}  />
 
