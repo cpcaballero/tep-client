@@ -14,7 +14,7 @@ import MediaIcon from '../assets/icons/media_coverage.png';
 import EventDetailingIcon from '../assets/icons/event_detailing.png';
 import GiveawayIcon from '../assets/icons/giveaway.png';
 import Navbar from 'react-bootstrap/Navbar';
-
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import VenueImage from '../assets/icons/venues.jpg';
 import CateringImage from '../assets/icons/catering.jpg';
 import EntertainmentImage from '../assets/icons/entertainment.jpg';
@@ -119,16 +119,18 @@ const Landing = (props) => {
                         </InputGroup.Append>
                     </InputGroup>
                 </div>
-                <CardDeck className="mx-1 my-3">
+                <CardDeck  className="mx-1 my-3">
                     <div className="col-sm-4 col-md-2 mx-0 px-1">
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img fluid variant="top" src={SampleImage} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={VenueIcon} width="50" height="auto" /><br/><b>Venues</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text>
                                     Church, Restaurant, Garden, Hall, etc.
                                 </Card.Text>
@@ -139,11 +141,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img fluid variant="top" src={CateringImage} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={CateringIcon} width="50" height="auto" /><br/><b>Catering</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text>
                                     Japanese, Mediterranean, Vegetarian, Halal, etc.
                                 </Card.Text>
@@ -154,11 +158,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img fluid variant="top" src={EntertainmentImage} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={EntertainmentIcon} width="50" height="auto" /><br/><b>Entertainment</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text>
                                     Singer, DJ, Band, Hosting, Talents, etc.
                                 </Card.Text>
@@ -169,11 +175,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img variant="top" src={MediaImage} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={MediaIcon} width="50" height="auto" /><br/><b>Media Coverage</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text>
                                     Videographer, Photographer, Live Streaming, etc.
                                 </Card.Text>
@@ -184,11 +192,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img variant="top" src={EventDetailingImage} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={EventDetailingIcon} width="50" height="auto" /><br/><b>Event Detailing</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text>
                                     Coordinator, Lights and Sounds, Tailoring, Florist, Decor, etc.
                                 </Card.Text>
@@ -199,11 +209,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img variant="top" src={GiveawayImage} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={GiveawayIcon} width="50" height="auto" /><br />Giveaways
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text>
                                     Invitation, Souvenirs, Photo Booth, etc.
                                 </Card.Text>
