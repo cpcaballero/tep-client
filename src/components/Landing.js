@@ -21,6 +21,16 @@ import MediaImage from '../assets/icons/meda-coverage.jpg';
 import EventDetailingImage from '../assets/icons/event-detailing.jpg';
 import GiveawayImage from '../assets/icons/giveaways.jpg';
 
+import FeaturedTopRated01 from '../assets/icons/featured-toprated-01.jpg';
+import Featured02 from '../assets/icons/featured-02.jpg';
+import Featured03 from '../assets/icons/featured-03.jpg';
+import Featured04 from '../assets/icons/featured-04.jpg';
+
+import TopRated02 from '../assets/icons/toprated-02.jpg';
+import TopRated03 from '../assets/icons/toprated-03.jpg';
+import TopRated04 from '../assets/icons/toprated-04.jpg';
+
+
 
 
 const Landing = (props) => {
@@ -103,7 +113,7 @@ const Landing = (props) => {
                         </InputGroup.Append>
                     </InputGroup>
                 </div>
-                <CardDeck className="mx-1">
+                <CardDeck className="mx-1 my-3">
                     <div className="col-sm-4 col-md-2 mx-0 px-1">
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img fluid variant="top" src={SampleImage} />

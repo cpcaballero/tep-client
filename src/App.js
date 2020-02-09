@@ -18,6 +18,7 @@ import Container from 'react-bootstrap/Container';
 import AccountType from './components/AccountType';
 import MerchantProfile from './components/MerchantProfile';
 import MerchantDocument from './components/MerchantDocument';
+import MerchantCalendar from './components/MerchantCalendar';
 
 const App = () => {
 
@@ -61,6 +62,11 @@ const App = () => {
                     } />
                     <Route exact path="/merchantDocument" render={
                         (props) => <MerchantDocument />
+                    
+                    } />
+
+                    <Route exact path="/merchantCalendar" render={
+                        (props) => <MerchantCalendar />
                     
                     } />
                 </div>
