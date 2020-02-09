@@ -206,10 +206,7 @@ const Landing = (props) => {
                     </div>
                     
                 </CardDeck>
-
-
-
-</Container>
+            </Container>
             <Modal show={props.signUpModal} onHide={props.handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Sign Up!</Modal.Title>
