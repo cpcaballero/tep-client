@@ -20,6 +20,7 @@ import CateringImage from '../assets/icons/catering.jpg';
 import EntertainmentImage from '../assets/icons/entertainment.jpg';
 import MediaImage from '../assets/icons/meda-coverage.jpg';
 import EventDetailingImage from '../assets/icons/event-detailing.jpg';
+import E1 from '../assets/icons/event_detailing.png';
 import GiveawayImage from '../assets/icons/giveaways.jpg';
 
 import F1 from '../assets/icons/featured-toprated-01.jpg';
@@ -269,7 +270,7 @@ const Landing = (props) => {
                             <Card.Body className="text-center">
                                 <Card.Title>
                                     <span>
-                                        <Image variant="top" src={EntertainmentIcon} width="50" height="auto" /><br /><b>Peter Parker Images</b>
+                                        <Image variant="top" src={GiveawayIcon} width="50" height="auto" /><br /><b>Peter Parker Images</b>
                                     </span>
                                 </Card.Title>
                                 <Card.Text align="left">Photobooth <br/> PHP 30,000 / day<br/>500 shots </Card.Text>
@@ -282,7 +283,7 @@ const Landing = (props) => {
                             <Card.Body className="text-center">
                                 <Card.Title>
                                     <span>
-                                        <Image variant="top" src={MediaIcon} width="50" height="auto" /><br /><b>Succulent Flowers</b>
+                                        <Image variant="top" src={E1} width="50" height="auto" /><br /><b>Succulent Flowers</b>
                                     </span>
                                 </Card.Title>
                                 <Card.Text align="left">Florist <br/> PHP 1,500 / arrangement<br/>4 flower variations </Card.Text>
@@ -328,7 +329,7 @@ const Landing = (props) => {
                             <Card.Body className="text-center">
                                 <Card.Title>
                                     <span>
-                                        <Image variant="top" src={CateringIcon} width="50" height="auto" /><br /><b>Garden of Divine Word </b>
+                                        <Image variant="top" src={VenueIcon} width="50" height="auto" /><br /><b>Garden of Divine Word </b>
                                     </span>
                                 </Card.Title>
                                 <Card.Text align="left">Venue - Quezon City <br/> PHP 175,000 / day<br/>Weddings, Debut, Birthday</Card.Text>
@@ -341,7 +342,7 @@ const Landing = (props) => {
                             <Card.Body className="text-center">
                                 <Card.Title>
                                     <span>
-                                        <Image variant="top" src={EntertainmentIcon} width="50" height="auto" /><br /><b>San Sebastian Church</b>
+                                        <Image variant="top" src={VenueIcon} width="50" height="auto" /><br /><b>San Sebastian Church</b>
                                     </span>
                                 </Card.Title>
                                 <Card.Text align="left">Venue - Manila <br/> PHP 30,000 / day<br/>Weddings, Baptism </Card.Text>
@@ -354,7 +355,7 @@ const Landing = (props) => {
                             <Card.Body className="text-center">
                                 <Card.Title>
                                     <span>
-                                        <Image variant="top" src={MediaIcon} width="50" height="auto" /><br /><b>TGIF BGC High Street</b>
+                                        <Image variant="top" src={VenueIcon} width="50" height="auto" /><br /><b>TGIF BGC High Street</b>
                                     </span>
                                 </Card.Title>
                                 <Card.Text align="left">Venue - Taguig <br/> PHP 12,500 / night<br/>Gatherings, Meetings, Celebration </Card.Text>
@@ -365,7 +366,8 @@ const Landing = (props) => {
 </div>
                     </div>
                 </CardDeck>
-                
+                <br/>
+                <br/>
             </Container>
 {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
 {/* ----------------------------------------------------------------------------------------------------------------------------------- */}

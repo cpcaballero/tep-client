@@ -23,13 +23,16 @@ const MerchantProfile = (props) => {
         <>
             <Container style={{marginTop: "80px"}}>
 <div>
+  <br/>
  <h3 align="center">We'd love to see you on board! Let's get your business up to speed</h3> 
 </div>
+<br/>
+
 <CardDeck>
   <Card style={{marginTop: "20px"}}> 
     <Card.Body>
     <div>
-    <Navbar.Brand href="#home"><Image variant="top" src={UploadIcon} width="30" height="auto" /> Click to add logo</Navbar.Brand>
+    <Navbar.Brand href="#home"><Image variant="top" src={UploadIcon} width="30" height="auto" /> Click to add your logo</Navbar.Brand>
  <br/>
     
 <label htmlFor="basic-url">Business Name</label>
@@ -73,15 +76,6 @@ const MerchantProfile = (props) => {
     <div>
       <Card.Title align="center"><b>Social Media Sites: Promote you business' pages</b></Card.Title>
 <br/>
-<label htmlFor="basic-url">Business Name</label>
-  <InputGroup className="mb-3">
-    <FormControl
-    //   placeholder="Username"
-    //   aria-label="Username"
-    //   aria-describedby="basic-addon1"
-    />
-  </InputGroup>
-
   <label htmlFor="basic-url">Facebook Link</label>
   <InputGroup className="mb-3">
     <FormControl

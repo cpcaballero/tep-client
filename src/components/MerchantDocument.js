@@ -23,8 +23,11 @@ const MerchantDocument = (props) => {
         <>
             <Container style={{marginTop: "80px"}}>
 <div>
+<br/>
  <h3 align="center">Cool! Your account is now setup. <br/> We just have to ask a few documents to verify your account </h3> 
 </div>
+<br/>
+
 <div>
 <Navbar.Brand href="#home" fontSize="6" align="center">Why do I need to be verified? <Image variant="top" src={QIcon} width="18" height="auto" /></Navbar.Brand>
 </div>
@@ -32,8 +35,7 @@ const MerchantDocument = (props) => {
   <Card style={{marginTop: "20px"}}> 
     <Card.Body>
     <div>
- <br/>
-<label htmlFor="basic-url"><b>Identity Information (jpeg/png format)</b></label>
+    <Card.Title align="left"><b>Identity Information (jpeg/png format)</b></Card.Title>
 
 <InputGroup style={{marginTop: "2px"}}>
     <FormControl
@@ -69,7 +71,7 @@ const MerchantDocument = (props) => {
 
   </InputGroup>
 <br/>
-  <label htmlFor="basic-url"><b>Business Information (jpeg/png or pdf format)</b></label>
+<Card.Title align="left"><b>Business Information (jpeg/png or pdf format)</b></Card.Title>
 
   <InputGroup className="mb-3">
     <FormControl
@@ -82,6 +84,9 @@ const MerchantDocument = (props) => {
     </InputGroup.Append>
     <InputGroup.Append>
       <InputGroup.Checkbox aria-label="Checkbox for following text input" />
+    </InputGroup.Append>
+    <InputGroup.Append>
+      <InputGroup.Text>N/A</InputGroup.Text>
     </InputGroup.Append>
   </InputGroup>
 
@@ -98,6 +103,9 @@ const MerchantDocument = (props) => {
     <InputGroup.Append>
       <InputGroup.Checkbox aria-label="Checkbox for following text input" />
     </InputGroup.Append>
+    <InputGroup.Append>
+      <InputGroup.Text>N/A</InputGroup.Text>
+    </InputGroup.Append>
   </InputGroup>
 
 </div>
@@ -108,7 +116,7 @@ const MerchantDocument = (props) => {
   <Card style={{marginTop: "20px"}}> 
     <Card.Body>
     <div>
-      <Card.Title align="center"><b>Social Media Sites: Promote you business' pages</b></Card.Title>
+      <Card.Title align="left"><b>Your Bank Information</b></Card.Title>
 <br/>
 <InputGroup style={{marginTop: "2px"}}>
     <FormControl
@@ -131,7 +139,7 @@ const MerchantDocument = (props) => {
     </DropdownButton>
     </InputGroup.Append>
   </InputGroup>
-
+<br/>
   <InputGroup style={{marginTop: "2px"}}>
     <FormControl
       placeholder="Choose your bank account type"
@@ -176,7 +184,7 @@ const MerchantDocument = (props) => {
 <Container style={{ align: "center", marginTop: "80px"}}>
     <Row>
         <Col className="text-center">
-            <Button as="input" className="" type="button" value="Submit my details for verification" />
+            <Button as="input" className="" type="button" value="Submit details to verify" />
         </Col>    
     </Row>
     
