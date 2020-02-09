@@ -14,7 +14,7 @@ import MediaIcon from '../assets/icons/media_coverage.png';
 import EventDetailingIcon from '../assets/icons/event_detailing.png';
 import GiveawayIcon from '../assets/icons/giveaway.png';
 import Navbar from 'react-bootstrap/Navbar';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import VenueImage from '../assets/icons/venues.jpg';
 import CateringImage from '../assets/icons/catering.jpg';
 import EntertainmentImage from '../assets/icons/entertainment.jpg';
@@ -229,7 +229,7 @@ const Landing = (props) => {
 {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
 {/* 2nd ------------------------------------------------------------------------------------------------------------- */}
 {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
-
+<br/>
 <Container fluid style={{marginTop: "60px"}}>
                 <div className="mx-1 w-100">
                     <InputGroup className="w-75" style={{marginTop: "20px"}}>
@@ -242,11 +242,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img fluid variant="top" src={F1} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={VenueIcon} width="50" height="auto" /><br /><b>Boracay Hotel & Resort A</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text align="left">Venue - Aklan <br/> PHP 150,000 / day<br/>400 pax </Card.Text>
                             </Card.Body>
                         </Card>
@@ -255,11 +257,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img fluid variant="top" src={F2} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={CateringIcon} width="50" height="auto" /><br /><b>Heavenly Eats Catering</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text align="left">Catering - Varies<br/> PHP 75,000 / day<br/>6 different foods </Card.Text>
                             </Card.Body>
                         </Card>
@@ -268,11 +272,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img fluid variant="top" src={F3} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={GiveawayIcon} width="50" height="auto" /><br /><b>Peter Parker Images</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text align="left">Photobooth <br/> PHP 30,000 / day<br/>500 shots </Card.Text>
                             </Card.Body>
                         </Card>
@@ -281,11 +287,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img variant="top" src={F4} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={E1} width="50" height="auto" /><br /><b>Succulent Flowers</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text align="left">Florist <br/> PHP 1,500 / arrangement<br/>4 flower variations </Card.Text>
                             </Card.Body>
                             
@@ -302,7 +310,7 @@ const Landing = (props) => {
 {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
 {/* 3rd ---------------------------------------------------------------------------------------------------------------------------- */}
 {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
-
+<br/>
  <Container fluid style={{marginTop: "60px"}}>
                 <div className="mx-1 w-100">
                     <InputGroup className="w-75" style={{marginTop: "20px"}}>
@@ -314,11 +322,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img fluid variant="top" src={F1} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={VenueIcon} width="50" height="auto" /><br /><b>Boracay Hotel & Resort A</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text align="left">Venue - Aklan <br/> PHP 150,000 / day<br/>Weddings, Receptions, Gatherings </Card.Text>
                             </Card.Body>
                         </Card>
@@ -327,11 +337,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img fluid variant="top" src={T2} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={VenueIcon} width="50" height="auto" /><br /><b>Garden of Divine Word </b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text align="left">Venue - Quezon City <br/> PHP 175,000 / day<br/>Weddings, Debut, Birthday</Card.Text>
                             </Card.Body>
                         </Card>
@@ -340,11 +352,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img fluid variant="top" src={T3} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={VenueIcon} width="50" height="auto" /><br /><b>San Sebastian Church</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text align="left">Venue - Manila <br/> PHP 30,000 / day<br/>Weddings, Baptism </Card.Text>
                             </Card.Body>
                         </Card>
@@ -353,11 +367,13 @@ const Landing = (props) => {
                         <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
                             <Card.Img variant="top" src={T4} />
                             <Card.Body className="text-center">
+                            <OverlayTrigger trigger="click">
                                 <Card.Title>
                                     <span>
                                         <Image variant="top" src={VenueIcon} width="50" height="auto" /><br /><b>TGIF BGC High Street</b>
                                     </span>
                                 </Card.Title>
+                                </OverlayTrigger>
                                 <Card.Text align="left">Venue - Taguig <br/> PHP 12,500 / night<br/>Gatherings, Meetings, Celebration </Card.Text>
                             </Card.Body>
                         </Card>
