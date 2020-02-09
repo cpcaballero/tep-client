@@ -13,6 +13,7 @@ import EntertainmentIcon from '../assets/icons/entertainment.png';
 import MediaIcon from '../assets/icons/media_coverage.png';
 import EventDetailingIcon from '../assets/icons/event_detailing.png';
 import GiveawayIcon from '../assets/icons/giveaway.png';
+import Navbar from 'react-bootstrap/Navbar';
 
 import VenueImage from '../assets/icons/venues.jpg';
 import CateringImage from '../assets/icons/catering.jpg';
@@ -21,14 +22,14 @@ import MediaImage from '../assets/icons/meda-coverage.jpg';
 import EventDetailingImage from '../assets/icons/event-detailing.jpg';
 import GiveawayImage from '../assets/icons/giveaways.jpg';
 
-import FeaturedTopRated01 from '../assets/icons/featured-toprated-01.jpg';
-import Featured02 from '../assets/icons/featured-02.jpg';
-import Featured03 from '../assets/icons/featured-03.jpg';
-import Featured04 from '../assets/icons/featured-04.jpg';
+import F1 from '../assets/icons/featured-toprated-01.jpg';
+import F2 from '../assets/icons/featured-02.jpg';
+import F3 from '../assets/icons/featured-03.jpg';
+import F4 from '../assets/icons/featured-04.jpg';
 
-import TopRated02 from '../assets/icons/toprated-02.jpg';
-import TopRated03 from '../assets/icons/toprated-03.jpg';
-import TopRated04 from '../assets/icons/toprated-04.jpg';
+import T2 from '../assets/icons/toprated-02.jpg';
+import T3 from '../assets/icons/toprated-03.jpg';
+import T4 from '../assets/icons/toprated-04.jpg';
 
 
 
@@ -89,11 +90,16 @@ const Landing = (props) => {
                     </Col>
                 </div>
             </div>
+
+{/* 1st ------------------------------------------------------------------------------------------------------------- */}
+
             <Container fluid style={{marginTop: "60px"}}>
                 <div className="mx-1 w-100">
                     <InputGroup className="w-75" style={{marginTop: "20px"}}>
+                    <h4>What can we help you find? &nbsp;&nbsp;&nbsp;  </h4>
+
                         <FormControl
-                            placeholder="What can we help you find?"
+                            placeholder="I have something in mind.."
                             aria-label="What can we help you find?"
                             aria-describedby="basic-addon2"
                             className="rounded-0"
@@ -120,7 +126,7 @@ const Landing = (props) => {
                             <Card.Body className="text-center">
                                 <Card.Title>
                                     <span>
-                                        <Image variant="top" src={VenueIcon} width="50" height="auto" /><br />Venues
+                                        <Image variant="top" src={VenueIcon} width="50" height="auto" /><br/><b>Venues</b>
                                     </span>
                                 </Card.Title>
                                 <Card.Text>
@@ -135,7 +141,7 @@ const Landing = (props) => {
                             <Card.Body className="text-center">
                                 <Card.Title>
                                     <span>
-                                        <Image variant="top" src={CateringIcon} width="50" height="auto" /><br />Catering
+                                        <Image variant="top" src={CateringIcon} width="50" height="auto" /><br/><b>Catering</b>
                                     </span>
                                 </Card.Title>
                                 <Card.Text>
@@ -150,7 +156,7 @@ const Landing = (props) => {
                             <Card.Body className="text-center">
                                 <Card.Title>
                                     <span>
-                                        <Image variant="top" src={EntertainmentIcon} width="50" height="auto" /><br />Entertainment
+                                        <Image variant="top" src={EntertainmentIcon} width="50" height="auto" /><br/><b>Entertainment</b>
                                     </span>
                                 </Card.Title>
                                 <Card.Text>
@@ -165,7 +171,7 @@ const Landing = (props) => {
                             <Card.Body className="text-center">
                                 <Card.Title>
                                     <span>
-                                        <Image variant="top" src={MediaIcon} width="50" height="auto" /><br />Media Coverage
+                                        <Image variant="top" src={MediaIcon} width="50" height="auto" /><br/><b>Media Coverage</b>
                                     </span>
                                 </Card.Title>
                                 <Card.Text>
@@ -180,7 +186,7 @@ const Landing = (props) => {
                             <Card.Body className="text-center">
                                 <Card.Title>
                                     <span>
-                                        <Image variant="top" src={EventDetailingIcon} width="50" height="auto" /><br />Event Detailing
+                                        <Image variant="top" src={EventDetailingIcon} width="50" height="auto" /><br/><b>Event Detailing</b>
                                     </span>
                                 </Card.Title>
                                 <Card.Text>
@@ -204,9 +210,154 @@ const Landing = (props) => {
                             </Card.Body>
                         </Card>
                     </div>
-                    
                 </CardDeck>
+                
             </Container>
+{/* ----------------------------------------------------------------------------------------------------------------------------------- */}
+{/* 2nd ------------------------------------------------------------------------------------------------------------- */}
+{/* ----------------------------------------------------------------------------------------------------------------------------------- */}
+
+<Container fluid style={{marginTop: "60px"}}>
+                <div className="mx-1 w-100">
+                    <InputGroup className="w-75" style={{marginTop: "20px"}}>
+                    <h4>Featured Mechanics &nbsp;&nbsp;&nbsp;  </h4>
+                    </InputGroup>
+                </div>
+                <div>
+                <CardDeck className="mx-1 my-3">
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img fluid variant="top" src={F1} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={VenueIcon} width="50" height="auto" /><br /><b>Boracay Hotel & Resort A</b>
+                                    </span>
+                                </Card.Title>
+                                <Card.Text align="left">Venue - Aklan <br/> PHP 150,000 / day<br/>400 pax </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img fluid variant="top" src={F2} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={CateringIcon} width="50" height="auto" /><br /><b>Heavenly Eats Catering</b>
+                                    </span>
+                                </Card.Title>
+                                <Card.Text align="left">Catering - Varies<br/> PHP 75,000 / day<br/>6 different foods </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img fluid variant="top" src={F3} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={EntertainmentIcon} width="50" height="auto" /><br /><b>Peter Parker Images</b>
+                                    </span>
+                                </Card.Title>
+                                <Card.Text align="left">Photobooth <br/> PHP 30,000 / day<br/>500 shots </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img variant="top" src={F4} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={MediaIcon} width="50" height="auto" /><br /><b>Succulent Flowers</b>
+                                    </span>
+                                </Card.Title>
+                                <Card.Text align="left">Florist <br/> PHP 1,500 / arrangement<br/>4 flower variations </Card.Text>
+                            </Card.Body>
+                            
+                        </Card>
+                        <div>
+<Navbar.Brand href="#home" fontSize="3" align="center">See More Featured Merchants </Navbar.Brand>
+</div>
+                    </div>
+
+                </CardDeck>
+                </div>
+
+            </Container>
+{/* ----------------------------------------------------------------------------------------------------------------------------------- */}
+{/* 3rd ---------------------------------------------------------------------------------------------------------------------------- */}
+{/* ----------------------------------------------------------------------------------------------------------------------------------- */}
+
+ <Container fluid style={{marginTop: "60px"}}>
+                <div className="mx-1 w-100">
+                    <InputGroup className="w-75" style={{marginTop: "20px"}}>
+                    <h4>Top Rated - Venues &nbsp;&nbsp;&nbsp;  </h4>
+                    </InputGroup>
+                </div>
+                <CardDeck className="mx-1 my-3">
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img fluid variant="top" src={F1} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={VenueIcon} width="50" height="auto" /><br /><b>Boracay Hotel & Resort A</b>
+                                    </span>
+                                </Card.Title>
+                                <Card.Text align="left">Venue - Aklan <br/> PHP 150,000 / day<br/>Weddings, Receptions, Gatherings </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img fluid variant="top" src={T2} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={CateringIcon} width="50" height="auto" /><br /><b>Garden of Divine Word </b>
+                                    </span>
+                                </Card.Title>
+                                <Card.Text align="left">Venue - Quezon City <br/> PHP 175,000 / day<br/>Weddings, Debut, Birthday</Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img fluid variant="top" src={T3} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={EntertainmentIcon} width="50" height="auto" /><br /><b>San Sebastian Church</b>
+                                    </span>
+                                </Card.Title>
+                                <Card.Text align="left">Venue - Manila <br/> PHP 30,000 / day<br/>Weddings, Baptism </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-sm-4 col-md-2 mx-0 px-1">
+                        <Card style={{marginTop: "20px"}} className="mx-0 h-100"> 
+                            <Card.Img variant="top" src={T4} />
+                            <Card.Body className="text-center">
+                                <Card.Title>
+                                    <span>
+                                        <Image variant="top" src={MediaIcon} width="50" height="auto" /><br /><b>TGIF BGC High Street</b>
+                                    </span>
+                                </Card.Title>
+                                <Card.Text align="left">Venue - Taguig <br/> PHP 12,500 / night<br/>Gatherings, Meetings, Celebration </Card.Text>
+                            </Card.Body>
+                        </Card>
+                        <div>
+<Navbar.Brand href="#home" fontSize="3" align="">See More Venues </Navbar.Brand>
+</div>
+                    </div>
+                </CardDeck>
+                
+            </Container>
+{/* ----------------------------------------------------------------------------------------------------------------------------------- */}
+{/* ----------------------------------------------------------------------------------------------------------------------------------- */}
+{/* ----------------------------------------------------------------------------------------------------------------------------------- */}
             <Modal show={props.signUpModal} onHide={props.handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Sign Up!</Modal.Title>
