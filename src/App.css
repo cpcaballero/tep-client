@@ -118,3 +118,12 @@
   height: 12vw;
   object-fit: cover;
 }
+
+.btn-facebook{
+  background-color: #3b5998 !important;
+  border-color: none;
+}
+
+.modal-content{
+  border-radius: 0px !important;
+}

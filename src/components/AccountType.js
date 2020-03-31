@@ -9,7 +9,6 @@ import Moment from 'react-moment';
 import SampleImageC from '../assets/icons/couple.jpg';
 import SampleImageM from '../assets/icons/merchant.jpg';
 import Navbar from 'react-bootstrap/Navbar';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 
 const AccountType = (props) => {
 
@@ -31,7 +30,7 @@ const AccountType = (props) => {
 <br/>
 
 <CardDeck>
-<OverlayTrigger trigger="click">
+
   <Card style={{marginTop: "20px"}}> 
     <Card.Img variant="top" src={SampleImageC} />
     <Card.Body>
@@ -41,13 +40,15 @@ const AccountType = (props) => {
       </Card.Text>
     </Card.Body>
   </Card> 
-  </OverlayTrigger>
+  
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <OverlayTrigger trigger="click">
+  
+
   <Card style={{marginTop: "20px"}}> 
+    <Link to="/MerchantProfile" style={{textDecoration: "none", color: "inherit"}}>
     <Card.Img variant="top" src={SampleImageM} />
     <Card.Body>
       <Card.Title align="center"><b>Merchant</b></Card.Title>
@@ -55,8 +56,10 @@ const AccountType = (props) => {
         Sell you products and services to customers, make you craft stand out in out marketplace and provide value to different events.
     </Card.Text>
     </Card.Body>
+    </Link>
   </Card>
-  </OverlayTrigger>
+  
+  
 
 </CardDeck>
 

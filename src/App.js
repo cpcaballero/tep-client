@@ -1,20 +1,22 @@
 import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import {
+    CardDeck,
+    Card,
+    Image,
+    SampleImage,
+    SampleIcon,
+    InputGroup,
+    Button,
+    FormControl,
+    DropdownButton,
+    Dropdown,
+    Container } from 'react-bootstrap';
 import Navbar from './components/layout/Navbar';
 import Landing from './components/Landing';
 import Dashboard from './components/Dashboard';
-import CardDeck from 'react-bootstrap/CardDeck';
-import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image';
-import SampleImage from './assets/icons/sample.PNG';
-import SampleIcon from './assets/icons/catering.png';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Button from 'react-bootstrap/Button';
-import FormControl from 'react-bootstrap/FormControl';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown';
-import Container from 'react-bootstrap/Container';
+import ScrollToTop from './components/layout/ScrollToTop';
 import AccountType from './components/AccountType';
 import MerchantProfile from './components/MerchantProfile';
 import MerchantDocument from './components/MerchantDocument';
@@ -22,27 +24,44 @@ import MerchantCalendar from './components/MerchantCalendar';
 
 const App = () => {
 
-    const [signUpModal, showSignUpModal] = useState(false);
-    const handleClose = () => showSignUpModal(false);
-    const handleShow = () => showSignUpModal(true);
+    const [loginModal, showLoginModal] = useState(false);
+    const handleLoginClose = () => showLoginModal(false);
+    const handleLoginShow = () => showLoginModal(true);
+
+    const [signupModal, showSignupModal] = useState(false);
+    const handleSignupClose = () => showSignupModal(false);
+    const handleSignupShow = () => showSignupModal(true);
+
+
 
 
     return (
         <Router>
                 <Navbar 
-                    showSignUpModal={showSignUpModal} 
-                    signUpModal={signUpModal} 
-                    handleClose={handleClose}
-                    handleShow={handleShow}
+                    showLoginModal={showLoginModal} 
+                    loginModal={loginModal} 
+                    handleLoginClose={handleLoginClose}
+                    handleLoginShow={handleLoginShow}
+
+                    showSignupModal={showSignupModal} 
+                    signupModal={signupModal} 
+                    handleSignupClose={handleSignupClose}
+                    handleSignupShow={handleSignupShow}
                 />
                 <div>
+                <ScrollToTop />
+                <Switch>
                     <Route exact path="/"  render={
                         (props) => <Landing 
                             {...props} 
-                            showSignUpModal={showSignUpModal} 
-                            signUpModal={signUpModal} 
-                            handleClose={handleClose}
-                            handleShow={handleShow} /> 
+                            showLoginModal={showLoginModal} 
+                            loginModal={loginModal} 
+                            handleLoginClose={handleLoginClose}
+                            handleLoginShow={handleLoginShow} 
+                            showSignupModal={showSignupModal} 
+                            signupModal={signupModal} 
+                            handleSignupClose={handleSignupClose}
+                            handleSignupShow={handleSignupShow} /> 
                     } />
 
 
@@ -69,6 +88,7 @@ const App = () => {
                         (props) => <MerchantCalendar />
                     
                     } />
+                </Switch>
                 </div>
         </Router>
     )
