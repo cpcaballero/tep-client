@@ -7,7 +7,7 @@ const app = express();
 // Init Middleware
 app.use(express.json({ extended: false }));
 
-\
+
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
