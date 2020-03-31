@@ -276,7 +276,7 @@ for (let x = 1; x <= 30; x++) {
                       </FormControl>
                     </div>
                     <div className="d-flex justify-content-center text-center my-5 py-2">
-                      <Doughnut data={...} />
+                      {/* <Doughnut data={...} /> */}
                       {/* <Chart options={donutChart.options} series={donutChart.series} type="donut" width="380" /> */}
                     </div>
                     <div className="d-flex justify-content-center my-3">
